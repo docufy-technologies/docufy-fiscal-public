@@ -34,9 +34,9 @@ function NavBar() {
       <NavTab setPosition={setPosition} to="/solutions">
         Solutions
       </NavTab>
-      {/* <NavTab setPosition={setPosition} to="/faq">
+      <NavTab setPosition={setPosition} to="/faq">
         FAQs
-      </NavTab> */}
+      </NavTab>
 
       <Cursor position={position} />
     </ul>
@@ -84,7 +84,7 @@ const Cursor = ({ position }: { position: Position }) => {
   return (
     <motion.li
       animate={position}
-      className="absolute z-0 h-9 -translate-y-2 max-sm:-translate-y-2 rounded-full bg-secondary"
+      className="absolute z-0 h-9 rounded-full bg-secondary"
     />
   );
 };
