@@ -162,7 +162,32 @@ const solutions: Solution[] = [
       pricingEstimates: "Starts at BDT 5,000/month",
     },
   },
-  // tax litigation and dispute resolution
+  {
+    title: "Tax Litigation & Dispute Resolution",
+    description:
+      "The Tax Litigation & Dispute Resolution service supports businesses in managing tax disputes, responding to tax authority queries, and resolving assessment-related issues in line with applicable tax laws. It helps reduce compliance risks, protect business interests, and ensure proper representation during tax proceedings.",
+    details: {
+      included: [
+        "Review of tax notices and assessment orders",
+        "Preparation of written replies and supporting documents",
+        "Representation before tax authorities",
+        "Assistance in appeal and hearing procedures",
+        "Dispute analysis and legal strategy support",
+        "Follow-up and coordination until resolution",
+      ],
+      commercialModel:
+        "Pricing is based on the complexity of the dispute, the stage of litigation, and the volume of documentation required.",
+      deliveryTime: "Depends on case complexity and authority timelines.",
+      pricingFactors: [
+        "Nature of tax dispute",
+        "Assessment amount involved",
+        "Documentation complexity",
+        "Number of hearings or representations required",
+        "Stage of appeal or litigation",
+      ],
+      pricingEstimates: "Starts at BDT 75,000",
+    },
+  },
 ];
 
 function RouteComponent() {
