@@ -4,7 +4,6 @@ import {
   IconBusinessplan,
   IconFunction,
   IconStack,
-  IconWebhook,
 } from "@tabler/icons-react";
 import { createFileRoute } from "@tanstack/react-router";
 import type { ClassNameValue } from "tailwind-merge";
@@ -100,13 +99,14 @@ function Home() {
         </div>
       </section>
       <section className="pb-12 md:pb-20">
-        <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
+        <div className="mx-auto max-w-6xl space-y-8 px-6">
           <h2 className="capitalize leading-relaxed tracking-wider text-center">
-            The Smart Solutions Docufy Tech Offers
+            Values that Docufy Fiscal Commits to Provide
           </h2>
 
           <div className="relative mx-auto grid max-w-6xl *:p-12 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-xl overflow-hidden gap-2">
             <SolutionsCardCustom
+              className="col-span-2 row-span-2"
               title="Project / Product Overview"
               description="A concise summary of a project's goals, scope, timeline, and outcomes."
               icon={<IconStack className="size-6" />}
@@ -127,14 +127,10 @@ function Home() {
               icon={<IconFunction className="size-6" />}
             />
             <SolutionsCardCustom
+              className="col-span-2"
               title="Software Requirement Specification (SRS)"
               description="Defines clear, verifiable system requirements."
               icon={<IconAppWindow className="size-6" />}
-            />
-            <SolutionsCardCustom
-              title="Web Application Development"
-              description="Builds responsive, user-friendly websites for your needs."
-              icon={<IconWebhook className="size-6" />}
             />
           </div>
         </div>
