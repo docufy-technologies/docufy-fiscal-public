@@ -49,7 +49,7 @@ function Home() {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="text-center h-screen"
+        className="text-center h-[90dvh]"
       >
         <div className="bg-linear-to-t from-background via-background/50 via-30% to-transparent h-full">
           <div className="max-w-3xl h-full flex flex-col items-center justify-center mx-auto gap-6">
@@ -74,7 +74,7 @@ function Home() {
         </div>
       </section>
       <section className="min-h-[90vh] max-w-6xl px-6 py-30 mx-auto gap-12">
-        <div className="grid md:grid-cols-3 *:border-foreground items-stretch gap-4">
+        <div className="grid md:grid-cols-3 *:border-foreground h-full items-stretch gap-4">
           <div
             id="message"
             className="flex h-full flex-col items-center justify-center gap-6 border p-6 md:p-10 col-span-2"
