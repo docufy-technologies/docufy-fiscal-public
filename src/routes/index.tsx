@@ -1,9 +1,10 @@
 import {
-  IconAppWindow,
-  IconBlocks,
-  IconBusinessplan,
-  IconFunction,
-  IconStack,
+  IconArchive,
+  IconBuildingStore,
+  IconChecklist,
+  IconClock,
+  IconShieldLock,
+  IconWriting,
 } from "@tabler/icons-react";
 import { createFileRoute } from "@tanstack/react-router";
 import type { ClassNameValue } from "tailwind-merge";
@@ -24,17 +25,14 @@ function SolutionsCardCustom({
   className?: ClassNameValue;
 }) {
   return (
-    <div
-      className={cn(
-        "space-y-3 text-center border border-foreground",
-        className,
-      )}
-    >
+    <div className={cn("border border-foreground text-center", className)}>
       <div className="relative mx-auto flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border items-center justify-center mb-4">
         {icon}
       </div>
-      <h3 className="text-xl">{title}</h3>
-      <p className="text-base mt-2 leading-tight">{description}</p>
+      <div className="space-y-3">
+        <h3 className="text-xl">{title}</h3>
+        <p className="text-base mt-2 leading-tight">{description}</p>
+      </div>
     </div>
   );
 }
@@ -61,32 +59,34 @@ function Home() {
               One Less Thing to Worry
             </h1>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              eum soluta est, sed debitis distinctio et error fugit tempore. A,
-              obcaecati.
+              Whether you need help filing on time, organizing records,
+              preparing for a return, or dealing with a tax issue that needs
+              attention, Docufy Fiscal gives you straightforward guidance,
+              careful support, and a clear process so tax work becomes one less
+              thing to worry about.
             </p>
             <div className="flex gap-6">
-              <AnimatedButton>Book A Consultation</AnimatedButton>
+              <AnimatedButton>Request a Consultation</AnimatedButton>
               <AnimatedButton variant="outline">Contact Us</AnimatedButton>
             </div>
           </div>
         </div>
       </section>
-      <section className="min-h-[90vh] max-w-6xl px-6 py-30 mx-auto gap-12">
+      <section className="min-h-[90vh] max-w-6xl px-6 py-30 mx-auto gap-8">
         <div className="grid md:grid-cols-3 *:border-foreground h-full items-stretch gap-4">
           <div
             id="message"
-            className="flex h-full flex-col items-center justify-center gap-6 border p-6 md:p-10 col-span-2"
+            className="flex h-full flex-col items-center justify-center gap-6 border p-6 col-span-2"
           >
-            <h1 className="lg:text-5xl font-serif uppercase">
-              You should not be worrying about taxes
+            <h1 className="lg:text-6xl text-wrap font-serif uppercase">
+              Tax work does not need to sit on your shoulders.
             </h1>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae laudantium ab, aut, ea officiis fugiat est saepe
-              deleniti vero voluptatum itaque quia commodi temporibus iure velit
-              ipsum. Ab beatae dolorum vero impedit, aliquam possimus a id,
-              assumenda perspiciatis sit odio.
+              From tax filings and VAT submissions to audits, RJSC returns,
+              consultancy, dispute handling, and the day-to-day details that
+              come with staying on top of fiscal obligations, Docufy Fiscal
+              helps you stay compliant, organized, and prepared with less
+              pressure, fewer last-minute surprises, and more peace of mind.
             </p>
           </div>
           <div id="image" className="h-full overflow-hidden border p-6">
@@ -98,48 +98,54 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="pb-12 md:pb-20">
+      <section id="values" className="pb-12 md:pb-20">
         <div className="mx-auto max-w-6xl space-y-8 px-6">
           <h2 className="capitalize leading-relaxed tracking-wider text-center">
-            Values that Docufy Fiscal Commits to Provide
+            Values Why Docufy Fiscal Stands Out
           </h2>
 
           <div className="relative mx-auto grid max-w-6xl *:p-12 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-xl overflow-hidden gap-2">
             <SolutionsCardCustom
-              className="col-span-2 row-span-2"
-              title="Project / Product Overview"
-              description="A concise summary of a project's goals, scope, timeline, and outcomes."
-              icon={<IconStack className="size-6" />}
+              title="End-to-end fiscal support"
+              description="One team handles tax filing, VAT, audits, RJSC returns, consultancy, and dispute matters so nothing gets scattered across vendors."
+              icon={<IconChecklist className="size-6" />}
             />
             <SolutionsCardCustom
-              title="Business Requirement Document (BRD)"
-              description="Documents business needs to guide system or process development."
-              icon={<IconBusinessplan className="size-6" />}
+              title="Accuracy with accountable process"
+              description="We focus on careful review, clean documentation, and timely submission, which lowers the chance of avoidable errors and last-minute fixes."
+              icon={<IconWriting className="size-6" />}
             />
             <SolutionsCardCustom
-              title="Product Requirement Document (PRD)"
-              description="Defines product purpose, features, and user needs for development."
-              icon={<IconBlocks className="size-6" />}
+              title="Confidential by default"
+              description="Client records are treated with strict confidentiality, so sensitive tax and financial information stays protected throughout the process."
+              icon={<IconShieldLock className="size-6" />}
             />
             <SolutionsCardCustom
-              title="Functional Requirement Document (FRD)"
-              description="Outlines system behaviors, features, and interactions."
-              icon={<IconFunction className="size-6" />}
+              title="Guidance that makes tax manageable"
+              description="We turn complex tax, VAT, and compliance requirements into practical next steps that are easier for teams and founders to act on."
+              icon={<IconBuildingStore className="size-6" />}
             />
             <SolutionsCardCustom
-              className="col-span-2"
-              title="Software Requirement Specification (SRS)"
-              description="Defines clear, verifiable system requirements."
-              icon={<IconAppWindow className="size-6" />}
+              title="Research-led support"
+              description="Our approach is built on clear communication and careful review, so clients get informed support instead of generic filing advice."
+              icon={<IconArchive className="size-6" />}
+            />
+            <SolutionsCardCustom
+              title="Prepared for both routine and urgent needs"
+              description="From recurring compliance work to notices and disputes, the team is set up to respond quickly when the situation needs attention."
+              icon={<IconClock className="size-6" />}
             />
           </div>
         </div>
       </section>
-      <section className="py-30 flex flex-col justifycenter text-center items-center gap-4">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet!</p>
+      <section className="py-30 flex flex-col justify-center text-center items-center gap-4">
+        <p>
+          Ready to elevate your tax experience? Let's get started with Docufy
+          Fiscal.
+        </p>
         <div className="flex gap-6">
-          <AnimatedButton>CTA CTA</AnimatedButton>
-          <AnimatedButton>CTA CTA</AnimatedButton>
+          <AnimatedButton>Book a Consultation</AnimatedButton>
+          <AnimatedButton variant="outline">Explore Solutions</AnimatedButton>
         </div>
       </section>
     </>
