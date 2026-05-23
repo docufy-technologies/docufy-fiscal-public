@@ -25,13 +25,20 @@ function SolutionsCardCustom({
   className?: ClassNameValue;
 }) {
   return (
-    <div className={cn("border border-foreground text-center", className)}>
-      <div className="relative mx-auto flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border items-center justify-center mb-4">
+    <div
+      className={cn(
+        "border border-secondary bg-card/60 text-center",
+        className,
+      )}
+    >
+      <div className="relative mx-auto mb-4 flex aspect-square size-12 items-center justify-center rounded-full border border-primary text-primary before:absolute before:-inset-2 before:rounded-full before:border before:border-secondary">
         {icon}
       </div>
       <div className="space-y-3">
-        <h3 className="text-xl">{title}</h3>
-        <p className="text-base mt-2 leading-tight">{description}</p>
+        <h3 className="text-xl text-primary">{title}</h3>
+        <p className="mt-2 text-base leading-tight text-secondary">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -55,10 +62,10 @@ function Home() {
               alt="Docufy Logo"
               className="h-20"
             />
-            <h1 className="uppercase font-serif lg:text-5xl">
+            <h1 className="uppercase font-serif lg:text-5xl text-primary">
               One Less Thing to Worry
             </h1>
-            <p className="text-xl">
+            <p className="text-xl text-secondary">
               Whether you need help filing on time, organizing records,
               preparing for a return, or dealing with a tax issue that needs
               attention, Docufy Fiscal gives you straightforward guidance,
@@ -91,15 +98,15 @@ function Home() {
         </div>
       </section>
       <section className="min-h-[90vh] max-w-6xl px-6 py-30 mx-auto gap-8">
-        <div className="grid md:grid-cols-3 *:border-foreground h-full items-stretch gap-4">
+        <div className="grid h-full items-stretch gap-4 md:grid-cols-3 *:border-secondary">
           <div
             id="message"
-            className="flex h-full flex-col items-center justify-center gap-6 border p-6 col-span-2"
+            className="col-span-2 flex h-full flex-col items-center justify-center gap-6 border border-primary bg-card/40 p-6"
           >
-            <h1 className="lg:text-6xl text-wrap font-serif uppercase">
+            <h1 className="lg:text-6xl text-wrap font-serif uppercase text-primary">
               Tax work does not need to sit on your shoulders.
             </h1>
-            <p className="text-xl">
+            <p className="text-xl text-secondary">
               From tax filings and VAT submissions to audits, RJSC returns,
               consultancy, dispute handling, and the day-to-day details that
               come with staying on top of fiscal obligations, Docufy Fiscal
@@ -107,7 +114,10 @@ function Home() {
               pressure, fewer last-minute surprises, and more peace of mind.
             </p>
           </div>
-          <div id="image" className="h-full overflow-hidden border p-6">
+          <div
+            id="image"
+            className="h-full overflow-hidden border border-secondary bg-card/40 p-6"
+          >
             <img
               src="/stressed.png"
               alt="Stressed"
@@ -118,11 +128,11 @@ function Home() {
       </section>
       <section id="values" className="pb-12 md:pb-20">
         <div className="mx-auto max-w-6xl space-y-8 px-6">
-          <h2 className="capitalize leading-relaxed tracking-wider text-center">
+          <h2 className="capitalize leading-relaxed tracking-wider text-center text-primary">
             Values Why Docufy Fiscal Stands Out
           </h2>
 
-          <div className="relative mx-auto grid max-w-6xl *:p-12 sm:grid-cols-2 lg:grid-cols-3 backdrop-blur-xl overflow-hidden gap-2">
+          <div className="relative mx-auto grid max-w-6xl overflow-hidden gap-2 backdrop-blur-xl *:border-secondary *:bg-card/50 *:p-12 sm:grid-cols-2 lg:grid-cols-3">
             <SolutionsCardCustom
               title="End-to-end fiscal support"
               description="One team handles tax filing, VAT, audits, RJSC returns, consultancy, and dispute matters so nothing gets scattered across vendors."

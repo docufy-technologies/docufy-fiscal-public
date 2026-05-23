@@ -14,7 +14,7 @@ function FooterAnchor({ label, href }: { label: string; href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-muted-foreground hover:text-primary block duration-150"
+      className="block text-foreground duration-150 hover:text-primary"
     >
       {label}
     </a>
@@ -53,7 +53,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X/Twitter"
-            className="text-muted-foreground hover:text-primary block"
+            className="block text-foreground hover:text-primary"
           >
             <IconBrandX />
           </a>
@@ -62,7 +62,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-muted-foreground hover:text-primary block"
+            className="block text-foreground hover:text-primary"
           >
             <IconBrandLinkedin />
           </a>
@@ -71,7 +71,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="text-muted-foreground hover:text-primary block"
+            className="block text-foreground hover:text-primary"
           >
             <IconBrandFacebook />
           </a>
@@ -80,7 +80,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-muted-foreground hover:text-primary block"
+            className="block text-foreground hover:text-primary"
           >
             <IconBrandInstagram />
           </a>
@@ -89,14 +89,20 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email"
-            className="text-muted-foreground hover:text-primary block"
+            className="block text-foreground hover:text-primary"
           >
             <IconMail />
           </a>
         </div>
-        <span className="text-muted-foreground block text-center text-base font-bold">
+        <span className="block text-center text-base text-foreground">
           {" "}
-          © {new Date().getFullYear()} <a href="https://docufybd.com">Docufy</a>
+          © {new Date().getFullYear()}{" "}
+          <a
+            href="https://docufybd.com"
+            className="text-foreground transition-colors duration-150 hover:text-primary"
+          >
+            Docufy
+          </a>
           , All rights reserved
         </span>
       </div>

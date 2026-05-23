@@ -32,7 +32,7 @@ function RouteComponent() {
                   key={item.question}
                   value={`${section.category}-${index}`}
                 >
-                  <AccordionTrigger className="text-base sm:text-lg hover:no-underline hover:text-primary font-body">
+                  <AccordionTrigger className="text-base sm:text-lg font-body hover:no-underline hover:text-accent">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent>
@@ -51,7 +51,7 @@ function RouteComponent() {
         Need a tailored quote? Reach us at{" "}
         <a
           href="mailto:info@docufybd.com"
-          className="underline underline-offset-3"
+          className="text-accent underline underline-offset-3 transition-colors duration-150 hover:text-primary"
         >
           info@docufybd.com
         </a>{" "}

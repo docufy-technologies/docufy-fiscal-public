@@ -86,8 +86,8 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       // Tailwind JIT allows arbitrary properties like `dark:[--shine:...]` if enabled.
       className={cn(
         "group inline-flex items-center justify-center rounded-4xl relative overflow-hidden border border-secondary cursor-pointer text-sm",
-        "font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50",
-        "[--shine:rgba(0,0,0,.66)] dark:[--shine:rgba(255,255,255,.66)]",
+        "font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+        "[--shine:var(--secondary)] dark:[--shine:var(--foreground)]",
         variantClasses[variant],
         sizeClasses[size],
         className,
@@ -98,9 +98,9 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
         className="tracking-wide flex items-center justify-center h-full w-full relative z-10"
         style={{
           WebkitMaskImage:
-            "linear-gradient(-75deg, white calc(var(--mask-x) + 20%), transparent calc(var(--mask-x) + 30%), white calc(var(--mask-x) + 100%))",
+            "linear-gradient(-75deg, var(--background) calc(var(--mask-x) + 20%), transparent calc(var(--mask-x) + 30%), var(--background) calc(var(--mask-x) + 100%))",
           maskImage:
-            "linear-gradient(-75deg, white calc(var(--mask-x) + 20%), transparent calc(var(--mask-x) + 30%), white calc(var(--mask-x) + 100%))",
+            "linear-gradient(-75deg, var(--background) calc(var(--mask-x) + 20%), transparent calc(var(--mask-x) + 30%), var(--background) calc(var(--mask-x) + 100%))",
         }}
         initial={{ ["--mask-x" as any]: "100%" } as any}
         animate={{ ["--mask-x" as any]: "-100%" } as any}

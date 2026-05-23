@@ -51,7 +51,7 @@ function RouteComponent() {
         {/*gmt+6 time*/}
         <span className="text-center text-sm max-sm:w-[75%] tracking-wider font-light">
           You landed on{" "}
-          <span className="border-b border-accent font-normal">
+          <span className="border-b border-accent font-normal text-accent">
             {getGMT6Time()}
           </span>{" "}
           according to our local time!
@@ -70,6 +70,7 @@ function RouteComponent() {
               href="https://docufybd.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-accent transition-colors duration-150 hover:text-primary"
             >
               Docufy
             </a>

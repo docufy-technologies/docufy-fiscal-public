@@ -154,14 +154,14 @@ export function TeamShowcaseDesktop({
   return (
     <div className="max-sm:hidden flex flex-col md:flex-row items-start gap-8 md:gap-10 lg:gap-6 select-none w-full max-w-4xl mx-auto py-8 px-4 md:px-6 font-sans">
       {/* ── Left: photo grid ── */}
-      <div className="flex gap-2 flex-shrink-0 overflow-x-auto mx-auto pb-1 md:pb-0">
+      <div className="flex gap-2 shrink-0 overflow-x-auto mx-auto pb-1 md:pb-0">
         {/* Column 1 */}
         <div className="flex flex-col gap-2">
           {col1.map((member) => (
             <PhotoCard
               key={member.role}
               member={member}
-              className="w-[130px] sm:h-[140px] md:w-[155px] md:h-[165px]"
+              className="w-32.5 sm:h-35 md:w-38.75 md:h-41.25"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
@@ -169,12 +169,12 @@ export function TeamShowcaseDesktop({
         </div>
 
         {/* Column 2 */}
-        <div className="flex flex-col gap-2 mt-[48px] sm:mt-[56px] md:mt-[68px]">
+        <div className="flex flex-col gap-2 mt-12 sm:mt-14 md:mt-17">
           {col2.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[130px] sm:h-[140px] md:w-[155px] md:h-[165px]"
+              className="w-32.5 sm:h-35 md:w-38.75 md:h-41.25"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
@@ -182,12 +182,12 @@ export function TeamShowcaseDesktop({
         </div>
 
         {/* Column 3 */}
-        <div className="flex flex-col gap-2 mt-[22px] sm:mt-[26px] md:mt-[32px]">
+        <div className="flex flex-col gap-2 mt-5.5 sm:mt-6.5 md:mt-8">
           {col3.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[130px] sm:h-[140px] md:w-[155px] md:h-[165px]"
+              className="w-32.5 sm:h-35 md:w-38.75 md:h-41.25"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
@@ -337,7 +337,7 @@ function MemberRow({
       </div>
 
       {/* Role */}
-      <p className="mt-1.5 pl-[27px] text-[7px] md:text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+      <p className="mt-1.5 pl-6.75 text-[7px] md:text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
         {member.role}
       </p>
     </div>

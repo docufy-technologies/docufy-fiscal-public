@@ -203,9 +203,9 @@ function RouteComponent() {
         <Accordion type="multiple" className="mt-10 gap-6">
           {solutions.map((solution) => (
             <AccordionItem value={solution.title} key={solution.title}>
-              <AccordionTrigger className="hover:no-underline hover:text-foreground/70 cursor-pointer flex justify-center items-center">
+              <AccordionTrigger className="hover:no-underline hover:text-primary cursor-pointer flex justify-center items-center">
                 <div className="flex flex-col gap-2">
-                  <h4 className="leading-none">{solution.title}</h4>
+                  <h4 className="leading-none text-accent">{solution.title}</h4>
                   <p className="text-lg text-muted-foreground">
                     {solution.description}
                   </p>
