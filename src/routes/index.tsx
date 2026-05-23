@@ -68,7 +68,7 @@ function Home() {
             <div className="flex gap-6">
               <AnimatedButton>
                 <a
-                  href="https://calendly.com/docufy/30min"
+                  href="https://calendly.com/docufy-bd/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full h-full flex justify-center items-center"
@@ -164,7 +164,7 @@ function Home() {
         <div className="flex gap-6">
           <AnimatedButton>
             <a
-              href="https://calendly.com/docufy/30min"
+              href="https://calendly.com/docufy-bd/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full h-full flex justify-center items-center"
