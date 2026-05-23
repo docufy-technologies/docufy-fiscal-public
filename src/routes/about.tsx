@@ -109,7 +109,7 @@ function RouteComponent() {
         <Quoted text="Quality is not a promise we make. It is a standard we uphold." />
         <AnimatedButton variant="accent">
           <a
-            href="https://calendly.com/docufytechnologies/30min"
+            href="https://calendly.com/docufy-bd/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full h-full flex justify-center items-center"
