@@ -26,7 +26,8 @@ export const faqItems: FAQItems = [
           "Yes. Many of our services can be handled online through proper document sharing, consultation, and follow-up. For complex matters, in-person meetings may also be arranged if needed.",
       },
       {
-        question: "Is my financial and personal information safe with Docufy Fiscal?",
+        question:
+          "Is my financial and personal information safe with Docufy Fiscal?",
         answer:
           "Yes. We treat client information with strict confidentiality and use it only for the purpose of providing the requested service.",
       },
@@ -76,7 +77,8 @@ export const faqItems: FAQItems = [
           "Yes. We provide tax consultancy to help businesses understand their tax obligations, manage compliance, and plan more efficiently within the legal framework.",
       },
       {
-        question: "Do you review business financial documents before filing tax returns?",
+        question:
+          "Do you review business financial documents before filing tax returns?",
         answer:
           "Yes. We review relevant financial documents, income records, expense details, and compliance documents before preparing the tax return.",
       },
@@ -171,7 +173,8 @@ export const faqItems: FAQItems = [
           "RJSC return submission helps a company maintain proper statutory compliance and keep its company records updated with the relevant authority.",
       },
       {
-        question: "What documents are usually needed for RJSC return submission?",
+        question:
+          "What documents are usually needed for RJSC return submission?",
         answer:
           "Common documents may include company information, director and shareholder details, annual return-related documents, financial records, and other statutory documents depending on the company’s situation.",
       },
@@ -206,7 +209,8 @@ export const faqItems: FAQItems = [
           "Yes. We may handle urgent matters depending on the deadline, document readiness, and complexity of the case.",
       },
       {
-        question: "Do you only file returns, or do you also guide clients after submission?",
+        question:
+          "Do you only file returns, or do you also guide clients after submission?",
         answer:
           "We provide both filing and advisory support. After submission, we can also guide clients regarding records, future compliance, and follow-up requirements.",
       },
