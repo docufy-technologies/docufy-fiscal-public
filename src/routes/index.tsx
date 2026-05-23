@@ -6,7 +6,7 @@ import {
   IconShieldLock,
   IconWriting,
 } from "@tabler/icons-react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ClassNameValue } from "tailwind-merge";
 import AnimatedButton from "@/components/ui/animated-button";
 import { cn } from "@/lib/utils";
@@ -66,8 +66,26 @@ function Home() {
               thing to worry about.
             </p>
             <div className="flex gap-6">
-              <AnimatedButton>Request a Consultation</AnimatedButton>
-              <AnimatedButton variant="outline">Contact Us</AnimatedButton>
+              <AnimatedButton>
+                <a
+                  href="https://calendly.com/docufy/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex justify-center items-center"
+                >
+                  Request A Consultation
+                </a>
+              </AnimatedButton>
+              <AnimatedButton variant="outline">
+                <a
+                  href="mailto:info@fiscal.docufybd.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex justify-center items-center"
+                >
+                  Contact Us
+                </a>
+              </AnimatedButton>
             </div>
           </div>
         </div>
@@ -144,8 +162,24 @@ function Home() {
           Fiscal.
         </p>
         <div className="flex gap-6">
-          <AnimatedButton>Book a Consultation</AnimatedButton>
-          <AnimatedButton variant="outline">Explore Solutions</AnimatedButton>
+          <AnimatedButton>
+            <a
+              href="https://calendly.com/docufy/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Book a Consultation
+            </a>
+          </AnimatedButton>
+          <AnimatedButton variant="outline">
+            <Link
+              to="/solutions"
+              className="w-full h-full flex justify-center items-center"
+            >
+              Explore Solutions
+            </Link>
+          </AnimatedButton>
         </div>
       </section>
     </>
