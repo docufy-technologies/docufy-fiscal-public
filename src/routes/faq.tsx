@@ -50,10 +50,10 @@ function RouteComponent() {
       <p className="mt-12 text-base sm:text-lg text-muted-foreground">
         Need a tailored quote? Reach us at{" "}
         <a
-          href="mailto:info@docufybd.com"
+          href="mailto:info@fiscal.docufybd.com"
           className="text-accent underline underline-offset-3 transition-colors duration-150 hover:text-primary"
         >
-          info@docufybd.com
+          info@fiscal.docufybd.com
         </a>{" "}
         .
       </p>
