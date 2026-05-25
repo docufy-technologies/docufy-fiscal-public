@@ -217,7 +217,7 @@ export const faqItems: FAQItems = [
       {
         question: "How can I contact Docufy Fiscal?",
         answer:
-          "You can contact Docufy Fiscal through our official website, phone number, email, or social media channels. Our team will review your query and guide you accordingly.",
+          "You can contact Docufy Fiscal through our official website, email, or social media channels. Our team will review your query and guide you accordingly.",
       },
     ],
   },
